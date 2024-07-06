@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pipedrive-app/static/css/main.9e2f5e85.css",
+    "main.js": "/pipedrive-app/static/js/main.46352053.js",
+    "static/js/453.3cbdcfb2.chunk.js": "/pipedrive-app/static/js/453.3cbdcfb2.chunk.js",
+    "index.html": "/pipedrive-app/index.html",
+    "main.9e2f5e85.css.map": "/pipedrive-app/static/css/main.9e2f5e85.css.map",
+    "main.46352053.js.map": "/pipedrive-app/static/js/main.46352053.js.map",
+    "453.3cbdcfb2.chunk.js.map": "/pipedrive-app/static/js/453.3cbdcfb2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e2f5e85.css",
+    "static/js/main.46352053.js"
+  ]
+}
