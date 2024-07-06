@@ -27,7 +27,7 @@ const OrderForm = ({ visible, onClose }) => {
     const submitData = async (values) => {
         setLoading(true);
         try {
-            // Создание person
+            // Create person
             const personResponse = await axios.post('https://api.pipedrive.com/v1/persons?api_token=89a00ee329df732768497bd630d0a4ca97ef4205', {
                 name: `${values.firstName} ${values.lastName}`,
                 email: values.email,
@@ -36,7 +36,7 @@ const OrderForm = ({ visible, onClose }) => {
 
             const personId = personResponse.data.data.id;
 
-            // Создание deal с использованием person_id
+            // Create deal using person_id
             const dealResponse = await axios.post('https://api.pipedrive.com/v1/deals?api_token=89a00ee329df732768497bd630d0a4ca97ef4205', {
                 title: values.title,
                 person_id: personId,
@@ -50,20 +50,20 @@ const OrderForm = ({ visible, onClose }) => {
             });
 
             setDealLink(`https://app.pipedrive.com/deal/${dealResponse.data.data.id}`);
-            message.success('Заказ успешно оформлен!');
+            message.success('Order successfully placed!');
             form.resetFields();
             setLoading(false);
             onClose();
             setSuccessModalVisible(true);
         } catch (error) {
-            message.error('Ошибка при оформлении заказа. Пожалуйста, попробуйте снова.');
+            message.error('Error placing order. Please try again.');
             setLoading(false);
         }
     };
 
     const fillMockData = () => {
         form.setFieldsValue({
-            firstName: 'sdf',
+            firstName: 'John',
             lastName: 'Doe',
             phone: '1234567890',
             email: 'john.doe@example.com',
@@ -150,17 +150,19 @@ const OrderForm = ({ visible, onClose }) => {
                                 </Form.Item>
                             </Card>
                         </div>
+                        <div className="btns">
                         <Form.Item>
                             <Button type="primary" htmlType="submit" loading={loading}>Submit</Button>
                         </Form.Item>
                         <Form.Item>
                             <Button type="default" onClick={fillMockData}>Mock Data</Button>
                         </Form.Item>
+                        </div>
                     </Form>
                 </Spin>
             </Modal>
             <Modal open={successModalVisible} onCancel={handleSuccessModalClose} footer={null}>
-                <h2>Заказ успешно оформлен!</h2>
+                <h2>Order successfully placed!</h2>
                 <p><a href={dealLink} target="_blank" rel="noopener noreferrer">View Details</a></p>
                 <Button type="primary" onClick={handleSuccessModalClose}>Close</Button>
             </Modal>
