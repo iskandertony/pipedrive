@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pipedrive-app/static/css/main.9e2f5e85.css",
-    "main.js": "/pipedrive-app/static/js/main.46352053.js",
-    "static/js/453.3cbdcfb2.chunk.js": "/pipedrive-app/static/js/453.3cbdcfb2.chunk.js",
-    "index.html": "/pipedrive-app/index.html",
-    "main.9e2f5e85.css.map": "/pipedrive-app/static/css/main.9e2f5e85.css.map",
-    "main.46352053.js.map": "/pipedrive-app/static/js/main.46352053.js.map",
-    "453.3cbdcfb2.chunk.js.map": "/pipedrive-app/static/js/453.3cbdcfb2.chunk.js.map"
+    "main.css": "/pipedrive/static/css/main.9e2f5e85.css",
+    "main.js": "/pipedrive/static/js/main.04840d9d.js",
+    "static/js/453.3cbdcfb2.chunk.js": "/pipedrive/static/js/453.3cbdcfb2.chunk.js",
+    "index.html": "/pipedrive/index.html",
+    "main.9e2f5e85.css.map": "/pipedrive/static/css/main.9e2f5e85.css.map",
+    "main.04840d9d.js.map": "/pipedrive/static/js/main.04840d9d.js.map",
+    "453.3cbdcfb2.chunk.js.map": "/pipedrive/static/js/453.3cbdcfb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e2f5e85.css",
-    "static/js/main.46352053.js"
+    "static/js/main.04840d9d.js"
   ]
 }
